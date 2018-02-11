@@ -1,3 +1,5 @@
+package com.JavaFX;
+
 import javafx.application.*;
 import javafx.scene.*;
 import javafx.stage.*;
@@ -16,7 +18,7 @@ public class JavaFXLabelDemo extends Application {
     public void start(Stage myStage) {
         
         //Give the stage a title
-        myStage.setTytle("Use a JavaFX label.");
+        myStage.setTitle("Use a JavaFX label.");
         
         //Use the FlowPane for the root node
         FlowPane rootNode = new FlowPane();
