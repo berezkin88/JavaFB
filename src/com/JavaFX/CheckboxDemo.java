@@ -66,12 +66,16 @@ public class CheckboxDemo extends Application{
         cbSmartphone.setOnAction(event -> {
             if (cbSmartphone.isSelected())
                 response.setText("Smartphone was just selected");
+            else if (cbSmartphone.isIndeterminate())
+                response.setText("Smartphone is indeterminate");
             else
                 response.setText("Smartphone was just cleared");
 
             showAll();
             }
         );
+
+        cbSmartphone.setAllowIndeterminate(true);
 
         cbTablet.setOnAction(event -> {
             if (cbTablet.isSelected())
